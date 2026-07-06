@@ -20,7 +20,7 @@
 
 ## 📌 Overview
 
-This project builds a complete, production-ready **RAG-powered customer support chatbot** as a DEPI graduation project. The system answers customer queries by semantically retrieving relevant passages from a historical support corpus and generating grounded, context-aware responses via Mistral 7B — deployed serverlessly on Modal.com with zero local infrastructure required for end users.
+This project builds a complete, production-ready **RAG-powered customer support chatbot** . The system answers customer queries by semantically retrieving relevant passages from a historical support corpus and generating grounded, context-aware responses via Mistral 7B — deployed serverlessly on Modal.com with zero local infrastructure required for end users.
 
 **Core capabilities:**
 - **Semantic retrieval** — queries matched by meaning, not keywords, using BGE-base-en-v1.5 embeddings
@@ -93,7 +93,7 @@ This project builds a complete, production-ready **RAG-powered customer support 
 ## 📁 Project Structure
 
 ```
-NHA-4-66/
+Rag-Customer-Support-Chatbot/
 │
 ├── 📂 config/
 │   └── config.yaml                    # Central config — MongoDB URI, embedding model,
@@ -209,14 +209,20 @@ NHA-4-66/
 | Ollama + `mistral` | Local testing only; not needed to use the chat app |
 | Modal account | Free — $30/month credit on new accounts |
 
-### 1. Clone & Install
+## 1. Clone & Install
 
 ```bash
-git clone https://github.com/your-username/NHA-4-66.git
-cd NHA-4-66
+git clone https://github.com/bassmaibrahim/Rag-Customer-Support-Chatbot.git
+cd Rag-Customer-Support-Chatbot
 
 python -m venv venv
-source venv/bin/activate   # Windows: venv\Scripts\activate
+
+# Windows
+venv\Scripts\activate
+
+# macOS/Linux
+source venv/bin/activate
+
 pip install -r requirements.txt
 ```
 
@@ -768,9 +774,7 @@ Modal requires zero infrastructure configuration. The entire deployment is a sin
 
 ---
 
-## 🤝 Team
 
-DEPI Graduation Project — Group NHA-4-66
 
 Built with [Sentence Transformers](https://sbert.net) · [MongoDB Atlas](https://mongodb.com/atlas) · [Ollama](https://ollama.com) · [Mistral](https://mistral.ai) · [Modal](https://modal.com) · [Streamlit](https://streamlit.io)
 
@@ -778,6 +782,6 @@ Built with [Sentence Transformers](https://sbert.net) · [MongoDB Atlas](https:/
 
 <div align="center">
 
-*Customer Support RAG Chatbot · DEPI Graduation Project · 2026*
+*Customer Support RAG Chatbot · 2026*
 
 </div>
